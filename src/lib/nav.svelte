@@ -86,6 +86,8 @@
 	nav {
 		position: fixed;
 		top: 0;
+		/* Rip 2000 become the leaflet map has insane z-indexes */
+		z-index: 2000;
 		right: -100%;
 		height: 100vh;
 		width: 100vw;
