@@ -44,6 +44,6 @@
     div {
         height: 300px;
         width: 100vw;
-        margin: 2rem 0;
+        margin: 2rem 0 0 0;
     }
 </style>

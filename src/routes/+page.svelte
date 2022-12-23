@@ -14,6 +14,20 @@
            
             <Leaflet />
         </section>
+
+        <div class="divider div-transparent"></div>
+
+        <section class="georgios">
+            <img src="/georgios.JPG" alt="Image of Georgios Karydopoulos">
+
+            <div>
+                <h2>Dr. Georgios Karydopoulos</h2>
+                <p>Pédiatre</p>
+            </div>
+        </section>
+
+        <div class="divider div-transparent"></div>
+
     </div>
 </main>
 
@@ -37,5 +51,17 @@
     .hero-text h2 {
         font-size: 2rem;
         margin-bottom: 1rem;
+    }
+
+    .georgios {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .georgios img {
+        height: 20rem;
+        border-radius: 10px;
     }
 </style>
