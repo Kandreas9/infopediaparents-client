@@ -6,6 +6,12 @@
     let mapElement;
     let map;
 
+    function centerLeafletMapOnMarker(map, marker) {
+        let latLngs = [ marker.getLatLng() ];
+        let markerBounds = leaflet.latLngBounds(latLngs);
+        map.fitBounds(markerBounds);
+    }
+
     onMount(async () => {
         if(browser) {
             map = leaflet.map(mapElement).setView([51.505, -0.09], 13);
@@ -14,9 +20,11 @@
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(map);
 
-            leaflet.marker([51.5, -0.09]).addTo(map)
-                .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+            let marker = leaflet.marker([43.56131071912586, 3.9513040418714134]).addTo(map)
+                .bindPopup('Centre Médical du Littoral')
                 .openPopup();
+
+            centerLeafletMapOnMarker(map, marker)
         }
     });
 
