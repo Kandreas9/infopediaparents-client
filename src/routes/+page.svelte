@@ -18,12 +18,17 @@
         <div class="divider div-transparent"></div>
 
         <section class="georgios">
-            <img src="/georgios.JPG" alt="Image of Georgios Karydopoulos">
+                <img class="georgios-img" src="/georgios.JPG" alt="Georgios Karydopoulos">
+    
+                <div class="content">
+                    <div>
+                        <h2>Dr. Georgios Karydopoulos</h2>
+                        <p>Pédiatre</p>
+                    </div>
 
-            <div>
-                <h2>Dr. Georgios Karydopoulos</h2>
-                <p>Pédiatre</p>
-            </div>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.doctolib.fr/pediatre/perols/georgios-karydopoulos"><img class="doctolib-img" src="/doctolib.png" alt="doctolib icon"></a>
+                </div>
+         
         </section>
 
         <div class="divider div-transparent"></div>
@@ -54,14 +59,29 @@
     }
 
     .georgios {
-        width: 100%;
         display: flex;
         align-items: center;
-        gap: 3rem;
+        gap: 2rem;
+        width: 100%;
     }
 
-    .georgios img {
+    .doctolib-img {
+        margin: 1rem 0;
+        height: 5rem;
+    }
+
+    .georgios-img {
         height: 20rem;
         border-radius: 10px;
+    }
+
+    @media (min-width: 700px) {
+        .georgios .content {
+            padding-right: 4rem;
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 </style>
