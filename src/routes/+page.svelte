@@ -2,53 +2,36 @@
     import Leaflet from '$lib/leaflet.svelte'
 </script>
 
-<main>
-    <div class="container">
-        <section class="hero">
-            <div class="hero-text">
-                <h2>Centre Médical du Littoral</h2>
-                <p>600 Avenue Marcel Pagnol</p>
-                <p>3440 Pérols</p>
-                <a href="tel:+33787290568">Tel: 0787290568</a>
-            </div>
-           
-            <Leaflet />
-        </section>
-
-        <div class="divider div-transparent"></div>
-
-        <section class="georgios">
-                <img class="georgios-img" src="/georgios.JPG" alt="Georgios Karydopoulos">
-    
-                <div class="content">
-                    <div>
-                        <h2>Dr. Georgios Karydopoulos</h2>
-                        <p>Pédiatre</p>
-                    </div>
-
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.doctolib.fr/pediatre/perols/georgios-karydopoulos"><img class="doctolib-img" src="/doctolib.png" alt="doctolib icon"></a>
-                </div>
-         
-        </section>
-
-        <div class="divider div-transparent"></div>
-
+<section class="hero">
+    <div class="hero-text">
+        <h2>Centre Médical du Littoral</h2>
+        <p>600 Avenue Marcel Pagnol</p>
+        <p>3440 Pérols</p>
+        <a href="tel:+33787290568">Tel: 0787290568</a>
     </div>
-</main>
+    
+    <Leaflet />
+</section>
 
+<div class="divider div-transparent"></div>
+
+<section class="georgios">
+        <img class="georgios-img" src="/georgios.JPG" alt="Georgios Karydopoulos">
+
+        <div class="content">
+            <div>
+                <h2>Dr. Georgios Karydopoulos</h2>
+                <p>Pédiatre</p>
+            </div>
+
+            <a target="_blank" rel="noopener noreferrer" href="https://www.doctolib.fr/pediatre/perols/georgios-karydopoulos"><img class="doctolib-img" src="/doctolib.png" alt="doctolib icon"></a>
+        </div>
+    
+</section>
+
+<div class="divider div-transparent"></div>
 
 <style>
-
-    main {
-        margin: 3rem 0;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .hero-text {
         text-align: center;
     }

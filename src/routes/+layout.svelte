@@ -6,6 +6,23 @@
 
 <Nav />
 
-<slot></slot>
+<main>
+    <div class="container">
+        <slot></slot>
+    </div>
+</main>
 
 <Footer />
+
+<style>
+    main {
+        margin: 3rem 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+</style>

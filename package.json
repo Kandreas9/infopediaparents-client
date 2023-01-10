@@ -19,6 +19,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@tryghost/content-api": "^1.11.5",
 		"leaflet": "^1.9.3"
 	}
 }

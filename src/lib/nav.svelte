@@ -22,7 +22,7 @@
 		</button>
 	
 		<nav class:open="{navOpen === true}">
-			<a href="#">Posts</a>
+			<a href="/articles">Articles</a>
 			<a href="#">Posts</a>
 
 			<button class="close-button" on:click={handleCloseMenu}>
