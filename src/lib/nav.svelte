@@ -1,29 +1,43 @@
 <script>
+	import Modal from "./modal.svelte";
+
 	let navOpen = false;
+	let searchOpen = false;
 
 	const handleOpenMenu = () => {
-		console.log('open');
 		navOpen = true;
 	}
 
 	const handleCloseMenu = () => {
 		navOpen = false;
 	}
+
+	const handleOpenSearch = () => {
+		searchOpen = true;
+	}
+
+	const handleCloseSearch = () => {
+		searchOpen = false;
+	}
 </script>
 
 <header>
 	<div class="container">
-		<h1>Saint George</h1>
+		<h1><a href="/">IPP</a></h1>
 
 		<!-- <input type="search"> -->
-		<button class="search-container">
+		<button on:click={handleOpenSearch} class="search-container">
 			<img src="/search.svg" alt="search icon">
 			<div>Search...</div>
 		</button>
+
+		{#if searchOpen}
+			 <Modal handleCloseSearch={handleCloseSearch}></Modal>
+		{/if}
 	
 		<nav class:open="{navOpen === true}">
-			<a href="/articles">Articles</a>
-			<a href="#">Posts</a>
+			<a on:click={handleCloseMenu} href="/articles">Articles</a>
+			<a on:click={handleCloseMenu} href="#">Posts</a>
 
 			<button class="close-button" on:click={handleCloseMenu}>
 				<img src="close.svg" alt="close menu icon">
@@ -62,7 +76,8 @@
 		justify-content: space-between;
 	}
 
-	h1 {
+	h1 a {
+		text-decoration: none;
 		font-size: 1.5rem;
 	}
 
