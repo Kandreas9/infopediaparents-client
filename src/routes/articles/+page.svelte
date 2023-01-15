@@ -1,7 +1,5 @@
 <script>
     export let data
-
-    console.log(data)
 </script>
 
 <h2 class="title">Articles</h2>
