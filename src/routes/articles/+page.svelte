@@ -66,6 +66,11 @@
 		background-color: rgb(238, 238, 238);
 	}
 
+	.article > div {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
 	.content {
 		width: 220px;
 		padding: 1rem;
@@ -96,13 +101,13 @@
 
 	@media (min-width: 700px) {
 		.articles img {
-			width: 15rem;
+			width: 10rem;
 		}
 	}
 
 	@media (min-width: 900px) {
 		.articles img {
-			width: 15rem;
+			width: 12rem;
 		}
 
 		.article {
