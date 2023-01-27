@@ -1,28 +1,26 @@
 <script>
-    import '../global.css'
-    import Nav from '$lib/nav.svelte'
-    import Footer from '$lib/footer.svelte'
+	import '../global.css';
+	import Nav from '$lib/nav.svelte';
+	import Footer from '$lib/footer.svelte';
 </script>
 
 <Nav />
 
 <main>
-    <div class="container">
-        <slot></slot>
-    </div>
+	<div class="container">
+		<slot />
+	</div>
 </main>
 
-<Footer />
-
+<!-- <Footer /> -->
 <style>
-    main {
-        margin: 3rem 0;
-    }
+	main {
+		margin: 3rem 0;
+	}
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 </style>

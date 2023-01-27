@@ -1,24 +1,24 @@
 <script>
-	import Modal from "./modal.svelte";
+	import Modal from './modal.svelte';
 
 	let navOpen = false;
 	let searchOpen = false;
 
 	const handleOpenMenu = () => {
 		navOpen = true;
-	}
+	};
 
 	const handleCloseMenu = () => {
 		navOpen = false;
-	}
+	};
 
 	const handleOpenSearch = () => {
 		searchOpen = true;
-	}
+	};
 
 	const handleCloseSearch = () => {
 		searchOpen = false;
-	}
+	};
 </script>
 
 <header>
@@ -27,30 +27,29 @@
 
 		<!-- <input type="search"> -->
 		<button on:click={handleOpenSearch} class="search-container">
-			<img src="/search.svg" alt="search icon">
+			<img src="/search.svg" alt="search icon" />
 			<div>Search...</div>
 		</button>
 
 		{#if searchOpen}
-			 <Modal handleCloseSearch={handleCloseSearch}></Modal>
+			<Modal {handleCloseSearch} />
 		{/if}
-	
-		<nav class:open="{navOpen === true}">
-			<a on:click={handleCloseMenu} href="/articles">Articles</a>
-			<a on:click={handleCloseMenu} href="#">Posts</a>
+
+		<nav class:open={navOpen === true}>
+			<a on:click={handleCloseMenu} href="/articles">Fiches</a>
 
 			<button class="close-button" on:click={handleCloseMenu}>
-				<img src="close.svg" alt="close menu icon">
+				<img src="close.svg" alt="close menu icon" />
 			</button>
 		</nav>
 
 		<button on:click={handleOpenMenu} class="burger-button">
-			<img src="/burger.svg" alt="burger menu icon">
+			<img src="/burger.svg" alt="burger menu icon" />
 		</button>
 
 		<div class="samu">
 			<a href="tel:+3315" class="samu-phone">
-				<img src="/samu.svg" alt="french samu emergency number icon">
+				<img src="/samu.svg" alt="french samu emergency number icon" />
 				<div>15</div>
 			</a>
 			<div>SAMU</div>
@@ -66,8 +65,7 @@
 	header {
 		background-color: #4070f4;
 		padding: 1rem;
-		box-shadow: 0px 2px 15px 5px rgba(0,0,0,0.6)
-;
+		box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.6);
 	}
 
 	.container {
@@ -85,7 +83,7 @@
 		display: flex;
 		align-items: center;
 		background: none;
-		padding: .2rem .5rem;
+		padding: 0.2rem 0.5rem;
 		border-radius: 1.6rem;
 		border: 1px solid #6c8ff1;
 	}
@@ -95,7 +93,7 @@
 	}
 
 	.search-container:hover {
-		animation: tilt-shaking .8s infinite;
+		animation: tilt-shaking 0.8s infinite;
 	}
 
 	nav {
@@ -108,7 +106,7 @@
 		width: 100vw;
 		background-color: #4070f4;
 		border-left: 1px solid #6c8ff1;
-		transition: right .5s ease-in-out;
+		transition: right 0.5s ease-in-out;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -125,8 +123,7 @@
 		border: none;
 	}
 
-
-	.burger-button img{
+	.burger-button img {
 		height: 3rem;
 	}
 
@@ -138,7 +135,7 @@
 		right: 1.5rem;
 	}
 
-	.close-button img{
+	.close-button img {
 		height: 3rem;
 	}
 
@@ -155,19 +152,33 @@
 
 	.samu-phone {
 		text-decoration: none;
-		border-radius: .5rem;
+		border-radius: 0.5rem;
 		border: 1px solid #6c8ff1;
-		padding: .2rem;
+		padding: 0.2rem;
 	}
 
 	@keyframes tilt-shaking {
-		0% { transform: translateX(0) }
-		25% { transform: translateY(-4px) }
-		35% { transform: translateY(-4px) rotate(10deg) }
-		55% { transform: translateY(-4px) rotate(-10deg) }
-		65% { transform: translateY(-4px) rotate(10deg) }
-		75% { transform: translateY(-4px) rotate(-10deg) }
-		100% { transform: translateY(0) rotate(0) }
+		0% {
+			transform: translateX(0);
+		}
+		25% {
+			transform: translateY(-4px);
+		}
+		35% {
+			transform: translateY(-4px) rotate(10deg);
+		}
+		55% {
+			transform: translateY(-4px) rotate(-10deg);
+		}
+		65% {
+			transform: translateY(-4px) rotate(10deg);
+		}
+		75% {
+			transform: translateY(-4px) rotate(-10deg);
+		}
+		100% {
+			transform: translateY(0) rotate(0);
+		}
 	}
 
 	@media (min-width: 700px) {

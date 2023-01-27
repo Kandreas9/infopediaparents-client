@@ -1,10 +1,11 @@
 import GhostContentAPI from '@tryghost/content-api';
+import { API_KEY, API_URI } from '$env/static/private';
 
 /** @type {import('./$types').PageLoad} */
 export async function load({ params }) {
 	const api = new GhostContentAPI({
-		url: 'http://localhost:8080',
-		key: 'a2f6a4bf18acd8e526e9ff131e',
+		url: API_URI,
+		key: API_KEY,
 		version: 'v5.0'
 	});
 

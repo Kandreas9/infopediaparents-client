@@ -39,6 +39,21 @@ body {
 	padding: 0 1rem;
 }
 
+.post-content figure {
+	display: flex;
+	justify-content: center;
+}
+
+.post-content img {
+	width: 30rem;
+	height: 40rem;
+}
+
+.post iframe {
+	height: 100vh;
+	width: 90vw;
+}
+
 .post h2 {
 	margin: 3rem 0 1rem 0;
 }
@@ -63,10 +78,20 @@ body {
 	.post {
 		padding: 0 10rem;
 	}
+
+	.post-content img {
+		width: 50rem;
+		height: 70rem;
+	}
 }
 
 @media (min-width: 1100px) {
 	.post {
 		padding: 0 15rem;
+	}
+
+	.post-content img {
+		width: 70rem;
+		height: 90rem;
 	}
 }
