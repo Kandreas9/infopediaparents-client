@@ -68,8 +68,8 @@ li {
 }
 
 .post-content img {
-	width: 30rem;
-	height: 40rem;
+	width: 18rem;
+	height: 25rem;
 }
 
 .post iframe {
@@ -93,7 +93,14 @@ li {
 	margin: 1rem 0;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 600px) {
+	.post-content img {
+		width: 30rem;
+		height: 40rem;
+	}
+}
+
+@media (min-width: 1000px) {
 	.kg-image {
 		height: 30vw;
 	}
