@@ -83,6 +83,8 @@
 
 	.content h2 {
 		font-size: 1rem;
+		display: inline-block;
+		word-break: break-word;
 	}
 
 	.content p {
