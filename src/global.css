@@ -33,6 +33,13 @@ body {
 	background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent);
 }
 
+/* ===Cookies=== */
+
+.cookieConsent__Right {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 /* ===Post=== */
 
 hr {
