@@ -4,10 +4,17 @@
 	import Footer from '$lib/footer.svelte';
 
 	import { GoogleAnalytics } from '@beyonk/svelte-google-analytics';
-	import '@beyonk/gdpr-cookie-consent-banner/dist/style.css'; // optional, you can also define your own styles
+	import '@beyonk/gdpr-cookie-consent-banner/dist/style.css';
 	import GdprBanner from '@beyonk/gdpr-cookie-consent-banner';
+	import { onMount } from 'svelte';
 
 	let ga;
+	let banner;
+
+	onMount(() => {
+		console.log(banner);
+		banner.show();
+	});
 
 	function initAnalytics() {
 		ga.init();
@@ -15,6 +22,7 @@
 </script>
 
 <GdprBanner
+	bind:this={banner}
 	description="Welcome! Please consider letting us to have your consent to store cookies"
 	on:analytics={initAnalytics}
 />
