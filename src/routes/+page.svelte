@@ -11,7 +11,7 @@
 			<a href="tel:+33787290568">Tel: 0787290568</a>
 		</div>
 		<div>
-			<a href="infopediaparens.fr">infopediaparens.fr</a>
+			<a href="https://infopediaparents.fr">infopediaparents.fr</a>
 		</div>
 	</div>
 
