@@ -2,10 +2,15 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<title>Infopediaparents - Fiches</title>
+	<meta name="description" content="La liste des fiches disponibles dans infopediaparents." />
+</svelte:head>
+
 <h2 class="title">Fiches</h2>
 <ul class="articles">
 	{#each data.props.posts as post}
-		<a href="/articles/{post.slug}">
+		<a href="/fiches/{post.slug}">
 			<li class="article">
 				<img src={post.feature_image} alt="article" />
 				<div>

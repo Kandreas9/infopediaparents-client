@@ -36,7 +36,7 @@
 		{/if}
 
 		<nav class:open={navOpen === true}>
-			<a on:click={handleCloseMenu} href="/articles">Fiches</a>
+			<a on:click={handleCloseMenu} href="/fiches">Fiches</a>
 
 			<button class="close-button" on:click={handleCloseMenu}>
 				<img src="close.svg" alt="close menu icon" />

@@ -2,6 +2,15 @@
 	import Leaflet from '$lib/leaflet.svelte';
 </script>
 
+<svelte:head>
+	<title>Infopediaparents - Home</title>
+	<meta
+		name="description"
+		content="Gergios Karydopoulos, un pédiatre collecte et rédige des fiches pour sensibiliser."
+	/>
+	<meta name="”robots”" content="index, follow" />
+</svelte:head>
+
 <section class="hero">
 	<div class="hero-text">
 		<h2>Centre Médical du Littoral</h2>
@@ -53,6 +62,7 @@
 	.georgios {
 		display: flex;
 		align-items: center;
+		flex-direction: column;
 		gap: 2rem;
 		width: 100%;
 	}
@@ -68,6 +78,10 @@
 	}
 
 	@media (min-width: 700px) {
+		.georgios {
+			flex-direction: row;
+		}
+
 		.georgios .content {
 			padding-right: 4rem;
 			flex: 1;
