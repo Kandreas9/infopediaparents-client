@@ -23,6 +23,7 @@
 
 <GdprBanner
 	bind:this={banner}
+	cookieName="gdpr"
 	description="Welcome! Please consider letting us to have your consent to store cookies"
 	on:analytics={initAnalytics}
 />
