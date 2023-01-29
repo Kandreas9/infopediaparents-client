@@ -3,14 +3,19 @@
 	import Nav from '$lib/nav.svelte';
 	import Footer from '$lib/footer.svelte';
 
-	import { GoogleAnalytics } from '@beyonk/svelte-google-analytics';
 	import '@beyonk/gdpr-cookie-consent-banner/dist/style.css';
 	import GdprBanner from '@beyonk/gdpr-cookie-consent-banner';
 
-	let ga;
-
 	function initAnalytics() {
-		ga.init();
+		if (typeof window !== undefined && window) {
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'G-JY254ZZ6R8');
+		}
 	}
 </script>
 
@@ -20,7 +25,9 @@
 	on:analytics={initAnalytics}
 />
 
-<GoogleAnalytics bind:this={ga} properties={['G-JY254ZZ6R8']} enabled={false} />
+<svelte:head>
+	<script async src="https://www.googletagmanager.com/gtag/js"></script>
+</svelte:head>
 
 <Nav />
 
