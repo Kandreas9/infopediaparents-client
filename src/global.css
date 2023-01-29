@@ -47,10 +47,14 @@ hr {
 	width: 95%;
 }
 
-strong {
+ul {
+	list-style-position: inside;
+}
+
+/* strong:last-of-type {
 	margin-bottom: 1rem;
 	font-size: 2rem;
-}
+} */
 
 li {
 	word-break: break-all;
