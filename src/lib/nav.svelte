@@ -54,6 +54,13 @@
 			</a>
 			<div>SAMU</div>
 		</div>
+		<div class="antipoison">
+			<a href="tel:+33561777447" class="antipoison-phone">
+				<img src="/samu.svg" alt="french samu emergency number icon" />
+				<div>05 ...</div>
+			</a>
+			<div>ANTIPOISON</div>
+		</div>
 	</div>
 </header>
 
@@ -139,18 +146,25 @@
 		height: 3rem;
 	}
 
-	.samu {
+	.samu,
+	.antipoison {
 		text-align: center;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 	}
 
-	.samu img {
+	.antipoison > div {
+		font-size: 0.7rem;
+	}
+
+	.samu img,
+	.antipoison img {
 		height: 2rem;
 	}
 
-	.samu-phone {
+	.samu-phone,
+	.antipoison-phone {
 		text-decoration: none;
 		border-radius: 0.5rem;
 		border: 1px solid #6c8ff1;
