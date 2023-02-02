@@ -15,13 +15,13 @@ export async function load({ params, url }) {
 		let res;
 		if (title) {
 			res = await api.posts.browse({
-				limit: 6,
+				limit: 10,
 				filter: `title:~'${title}'`,
 				include: 'tags, authors'
 			});
 		} else {
 			res = await api.posts.browse({
-				limit: 6,
+				limit: 10,
 				include: 'tags, authors'
 			});
 		}
