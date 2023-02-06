@@ -8,7 +8,6 @@
 		name="description"
 		content="Gergios Karydopoulos, un pédiatre collecte et rédige des fiches pour sensibiliser."
 	/>
-	<meta name="”robots”" content="index, follow" />
 </svelte:head>
 
 <section class="hero">
@@ -26,6 +25,23 @@
 
 	<Leaflet />
 </section>
+
+<div class="divider div-transparent" />
+
+<h2>Fiches</h2>
+<div class="fiches-boxes">
+	<a href="fiches?tag=fièvre" class="box">Mont enfant est malade</a>
+	<a href="fiches?tag=proprete,sommeil" class="box"
+		>Enfant normal et ses variations limites de la normale</a
+	>
+	<a href="#" class="box disabled">Les signes D'ALERTE</a>
+	<a href="#" class="box disabled">Les Bons Gestes</a>
+	<a href="#" class="box disabled">Mon enfant doit prendre UN MEDICAMENT</a>
+	<a href="fiches?tag=alimentation" class="box">Alimentation</a>
+	<a href="#" class="box disabled">Mon enfant s'est blessé</a>
+	<a href="#" class="box disabled">Les gestes Qui Sauvent</a>
+	<a href="#" class="box disabled">Numéros d'urgence</a>
+</div>
 
 <div class="divider div-transparent" />
 
@@ -59,6 +75,33 @@
 		margin-bottom: 1rem;
 	}
 
+	.fiches-boxes {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.fiches-boxes .box {
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		background-color: blue;
+		padding: 1rem;
+		height: 4rem;
+		text-decoration: none;
+	}
+
+	.disabled {
+		background-color: gray !important;
+		pointer-events: none;
+		cursor: default;
+	}
+
 	.georgios {
 		display: flex;
 		align-items: center;
@@ -75,6 +118,18 @@
 	.georgios-img {
 		height: 20rem;
 		border-radius: 10px;
+	}
+
+	@media (min-width: 600px) {
+		.fiches-boxes {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (min-width: 900px) {
+		.fiches-boxes {
+			grid-template-columns: repeat(3, 1fr);
+		}
 	}
 
 	@media (min-width: 700px) {

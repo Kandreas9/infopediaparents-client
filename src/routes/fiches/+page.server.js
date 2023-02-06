@@ -10,13 +10,21 @@ export async function load({ params, url }) {
 	});
 
 	const title = url.searchParams.get('title');
+	const tags = url.searchParams.get('tag');
 
+	console.log(`tags:[${tags}]`);
 	try {
 		let res;
 		if (title) {
 			res = await api.posts.browse({
 				limit: 10,
 				filter: `title:~'${title}'`,
+				include: 'tags, authors'
+			});
+		} else if (tags) {
+			res = await api.posts.browse({
+				limit: 10,
+				filter: `tags:[${tags}]`,
 				include: 'tags, authors'
 			});
 		} else {
