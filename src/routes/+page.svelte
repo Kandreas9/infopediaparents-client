@@ -34,7 +34,7 @@
 	<a href="fiches?tag=proprete,sommeil" class="box"
 		>Enfant normal et ses variations limites de la normale</a
 	>
-	<a href="fiches?tag=Signes D'alerte" class="box">Les signes D'ALERTE</a>
+	<a href="fiches?tag=signes-dalerte" class="box">Les signes D'ALERTE</a>
 	<a href="#" class="box disabled">Les Bons Gestes</a>
 	<a href="#" class="box disabled">Mon enfant doit prendre UN MEDICAMENT</a>
 	<a href="fiches?tag=alimentation" class="box">Alimentation</a>
