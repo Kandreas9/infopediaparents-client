@@ -26,7 +26,7 @@
 	<Leaflet />
 </section>
 
-<div class="divider div-transparent" />
+<!-- <div class="divider div-transparent" />
 
 <h2>Fiches</h2>
 <div class="fiches-boxes">
@@ -41,7 +41,7 @@
 	<a href="#" class="box disabled">Mon enfant s'est blessé</a>
 	<a href="#" class="box disabled">Les gestes Qui Sauvent</a>
 	<a href="#" class="box disabled">Numéros d'urgence</a>
-</div>
+</div> -->
 
 <div class="divider div-transparent" />
 
