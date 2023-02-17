@@ -10,23 +10,19 @@
 	/>
 </svelte:head>
 
-<section class="home-menu">
-	<h2><img class="logo" src="logo.png" alt="logo" /></h2>
-
-	<div class="fiches-boxes">
-		<a href="fiches?tag=fièvre" class="box">Mont enfant est malade</a>
-		<a href="fiches?tag=proprete,sommeil" class="box"
-			>Enfant normal et ses variations limites de la normale</a
-		>
-		<a href="fiches?tag=signes-dalerte" class="box">Les signes D'ALERTE</a>
-		<a href="#" class="box disabled">Les Bons Gestes</a>
-		<a href="#" class="box disabled">Mon enfant doit prendre UN MEDICAMENT</a>
-		<a href="fiches?tag=alimentation" class="box">Alimentation</a>
-		<a href="#" class="box disabled">Mon enfant s'est blessé</a>
-		<a href="#" class="box disabled">Les gestes Qui Sauvent</a>
-		<a href="#" class="box disabled">Numéros d'urgence</a>
-	</div>
-</section>
+<div class="fiches-boxes">
+	<a href="fiches?tag=fièvre" class="box">Mont enfant est malade</a>
+	<a href="fiches?tag=proprete,sommeil" class="box"
+		>Enfant normal et ses variations limites de la normale</a
+	>
+	<a href="fiches?tag=signes-dalerte" class="box">Les signes D'ALERTE</a>
+	<a href="#" class="box disabled">Les Bons Gestes</a>
+	<a href="#" class="box disabled">Mon enfant doit prendre UN MEDICAMENT</a>
+	<a href="fiches?tag=alimentation" class="box">Alimentation</a>
+	<a href="#" class="box disabled">Mon enfant s'est blessé</a>
+	<a href="#" class="box disabled">Les gestes Qui Sauvent</a>
+	<a href="#" class="box disabled">Numéros d'urgence</a>
+</div>
 
 <div class="divider div-transparent" />
 
@@ -69,16 +65,6 @@
 <div class="divider div-transparent" />
 
 <style>
-	.home-menu {
-		display: flex;
-		flex-direction: column;
-		gap: 2rem;
-	}
-	.home-menu h2 {
-		display: flex;
-		justify-content: center;
-	}
-
 	.logo {
 		height: 10rem;
 	}
