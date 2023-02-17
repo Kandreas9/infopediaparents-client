@@ -10,6 +10,26 @@
 	/>
 </svelte:head>
 
+<section class="home-menu">
+	<h2><img class="logo" src="logo.png" alt="logo" /></h2>
+
+	<div class="fiches-boxes">
+		<a href="fiches?tag=fièvre" class="box">Mont enfant est malade</a>
+		<a href="fiches?tag=proprete,sommeil" class="box"
+			>Enfant normal et ses variations limites de la normale</a
+		>
+		<a href="fiches?tag=signes-dalerte" class="box">Les signes D'ALERTE</a>
+		<a href="#" class="box disabled">Les Bons Gestes</a>
+		<a href="#" class="box disabled">Mon enfant doit prendre UN MEDICAMENT</a>
+		<a href="fiches?tag=alimentation" class="box">Alimentation</a>
+		<a href="#" class="box disabled">Mon enfant s'est blessé</a>
+		<a href="#" class="box disabled">Les gestes Qui Sauvent</a>
+		<a href="#" class="box disabled">Numéros d'urgence</a>
+	</div>
+</section>
+
+<div class="divider div-transparent" />
+
 <section class="hero">
 	<div class="hero-text">
 		<h2>Centre Médical du Littoral</h2>
@@ -25,23 +45,6 @@
 
 	<Leaflet />
 </section>
-
-<!-- <div class="divider div-transparent" />
-
-<h2>Fiches</h2>
-<div class="fiches-boxes">
-	<a href="fiches?tag=fièvre" class="box">Mont enfant est malade</a>
-	<a href="fiches?tag=proprete,sommeil" class="box"
-		>Enfant normal et ses variations limites de la normale</a
-	>
-	<a href="fiches?tag=signes-dalerte" class="box">Les signes D'ALERTE</a>
-	<a href="#" class="box disabled">Les Bons Gestes</a>
-	<a href="#" class="box disabled">Mon enfant doit prendre UN MEDICAMENT</a>
-	<a href="fiches?tag=alimentation" class="box">Alimentation</a>
-	<a href="#" class="box disabled">Mon enfant s'est blessé</a>
-	<a href="#" class="box disabled">Les gestes Qui Sauvent</a>
-	<a href="#" class="box disabled">Numéros d'urgence</a>
-</div> -->
 
 <div class="divider div-transparent" />
 
@@ -66,6 +69,20 @@
 <div class="divider div-transparent" />
 
 <style>
+	.home-menu {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	.home-menu h2 {
+		display: flex;
+		justify-content: center;
+	}
+
+	.logo {
+		height: 10rem;
+	}
+
 	.hero-text {
 		text-align: center;
 	}
@@ -80,20 +97,37 @@
 		margin: 0 auto;
 		padding: 0 2rem;
 		display: grid;
-		gap: 1rem;
+		gap: 0.5rem;
 		grid-template-columns: repeat(2, 1fr);
 	}
 
+	.box:nth-child(3n + 1) {
+		background-color: rgb(51, 67, 121);
+	}
+
+	.box:nth-child(3n + 3) {
+		background-color: rgb(124, 144, 207);
+	}
+
+	.box:nth-child(3n + 2) {
+		background-color: rgb(78, 102, 181);
+	}
+
 	.fiches-boxes .box {
+		cursor: pointer;
 		text-align: center;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		color: white;
-		background-color: blue;
 		padding: 1rem;
 		height: auto;
 		text-decoration: none;
+		transition: transform 0.2s ease-out;
+	}
+
+	.fiches-boxes .box:hover {
+		transform: scale(1.2);
 	}
 
 	.disabled {
