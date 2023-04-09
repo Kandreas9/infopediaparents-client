@@ -11,7 +11,7 @@
 </svelte:head>
 
 <div class="fiches-boxes">
-	<a href="fiches?tag=fièvre" class="box">Mont enfant est malade</a>
+	<a href="fiches?tag=fièvre" class="box">Mon enfant est malade</a>
 	<a href="fiches?tag=proprete,sommeil,sucette,dents" class="box"
 		>Enfant normal et ses variations limites de la normale</a
 	>
