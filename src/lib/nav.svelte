@@ -38,6 +38,23 @@
 		<nav class:open={navOpen === true}>
 			<a on:click={handleCloseMenu} href="/fiches">Fiches</a>
 
+			<div class="phones-mobile">
+				<div class="samu">
+					<a href="tel:+3315" class="samu-phone">
+						<img src="/samu.svg" alt="french samu emergency number icon" />
+						<div>15</div>
+					</a>
+					<div>SAMU</div>
+				</div>
+				<div class="antipoison">
+					<a href="tel:+33561777447" class="antipoison-phone">
+						<img src="/samu.svg" alt="french samu emergency number icon" />
+						<div>05 ...</div>
+					</a>
+					<div>ANTIPOISON</div>
+				</div>
+			</div>
+
 			<button class="close-button" on:click={handleCloseMenu}>
 				<img src="close.svg" alt="close menu icon" />
 			</button>
@@ -47,19 +64,21 @@
 			<img src="/burger.svg" alt="burger menu icon" />
 		</button>
 
-		<div class="samu">
-			<a href="tel:+3315" class="samu-phone">
-				<img src="/samu.svg" alt="french samu emergency number icon" />
-				<div>15</div>
-			</a>
-			<div>SAMU</div>
-		</div>
-		<div class="antipoison">
-			<a href="tel:+33561777447" class="antipoison-phone">
-				<img src="/samu.svg" alt="french samu emergency number icon" />
-				<div>05 ...</div>
-			</a>
-			<div>ANTIPOISON</div>
+		<div class="phones">
+			<div class="samu">
+				<a href="tel:+3315" class="samu-phone">
+					<img src="/samu.svg" alt="french samu emergency number icon" />
+					<div>15</div>
+				</a>
+				<div>SAMU</div>
+			</div>
+			<div class="antipoison">
+				<a href="tel:+33561777447" class="antipoison-phone">
+					<img src="/samu.svg" alt="french samu emergency number icon" />
+					<div>05 ...</div>
+				</a>
+				<div>ANTIPOISON</div>
+			</div>
 		</div>
 	</div>
 </header>
@@ -67,6 +86,21 @@
 <style>
 	* {
 		color: white;
+	}
+
+	.phones-mobile {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.phones {
+		display: none;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
 	}
 
 	header {
@@ -196,6 +230,12 @@
 	}
 
 	@media (min-width: 700px) {
+		.phones-mobile {
+			display: none;
+		}
+		.phones {
+			display: flex;
+		}
 		.burger-button {
 			display: none;
 		}
