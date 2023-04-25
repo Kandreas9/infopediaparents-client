@@ -17,19 +17,19 @@ export async function load({ params, url }) {
 		let res;
 		if (title) {
 			res = await api.posts.browse({
-				limit: 10,
+				limit: 50,
 				filter: `title:~'${title}'`,
 				include: 'tags, authors'
 			});
 		} else if (tags) {
 			res = await api.posts.browse({
-				limit: 10,
+				limit: 50,
 				filter: `tags:[${tags}]`,
 				include: 'tags, authors'
 			});
 		} else {
 			res = await api.posts.browse({
-				limit: 10,
+				limit: 50,
 				include: 'tags, authors'
 			});
 		}
