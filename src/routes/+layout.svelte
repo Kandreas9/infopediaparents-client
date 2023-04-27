@@ -3,8 +3,8 @@
 	import Nav from '$lib/nav.svelte';
 	import Footer from '$lib/footer.svelte';
 
-	import '@beyonk/gdpr-cookie-consent-banner/dist/style.css';
-	import GdprBanner from '@beyonk/gdpr-cookie-consent-banner';
+	import '@beyonk/gdpr-cookie-consent-banner/style.css';
+	import { Banner as GdprBanner } from '@beyonk/gdpr-cookie-consent-banner';
 
 	function initAnalytics() {
 		if (typeof window !== undefined && window) {

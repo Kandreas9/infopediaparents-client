@@ -6,6 +6,11 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--red-main: #dc4848;
+	--gray-main: #989898;
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
 }

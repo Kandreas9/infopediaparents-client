@@ -5,6 +5,7 @@
 	let searchOpen = false;
 
 	const handleOpenMenu = () => {
+		console.log('test');
 		navOpen = true;
 	};
 
@@ -152,7 +153,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: 1rem;
+		gap: 2rem;
 	}
 
 	.open {

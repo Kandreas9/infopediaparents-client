@@ -21,7 +21,7 @@
 	<a href="fiches?tag=alimentation" class="box">Alimentation</a>
 	<a href="#" class="box disabled">Mon enfant s'est blessé</a>
 	<a href="#" class="box disabled">Les gestes Qui Sauvent</a>
-	<a href="#" class="box disabled">Numéros d'urgence</a>
+	<a href="numero-durgence" class="box">Numéros d'urgence</a>
 </div>
 
 <div class="divider div-transparent" />
