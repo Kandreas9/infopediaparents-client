@@ -12,7 +12,7 @@
 
 <div class="fiches-boxes">
 	<a href="fiches?tag=fièvre" class="box">Mon enfant est malade</a>
-	<a href="fiches?tag=proprete,sommeil,sucette,dents" class="box"
+	<a href="fiches?tag=proprete,sommeil,sucette,dents,normale" class="box"
 		>Enfant normal et ses variations limites de la normale</a
 	>
 	<a href="fiches?tag=signes-dalerte" class="box">Les signes D'ALERTE</a>
