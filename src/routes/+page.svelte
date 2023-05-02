@@ -16,7 +16,7 @@
 		>Enfant normal et ses variations limites de la normale</a
 	>
 	<a href="fiches?tag=signes-dalerte" class="box">Les signes D'ALERTE</a>
-	<a href="#" class="box disabled">Les Bons Gestes</a>
+	<a href="fiches?tag=bon" class="box">Les Bons Gestes</a>
 	<a href="fiches?tag=medicament" class="box">Mon enfant doit prendre UN MEDICAMENT</a>
 	<a href="fiches?tag=alimentation" class="box">Alimentation</a>
 	<a href="#" class="box disabled">Mon enfant s'est blessé</a>
