@@ -20,7 +20,7 @@
 	<a href="fiches?tag=medicament" class="box">Mon enfant doit prendre UN MEDICAMENT</a>
 	<a href="fiches?tag=alimentation" class="box">Alimentation</a>
 	<a href="#" class="box disabled">Mon enfant s'est blessé</a>
-	<a href="fiches?tag=gestes" class="box disabled">Les gestes Qui Sauvent</a>
+	<a href="fiches?tag=gestes" class="box">Les gestes Qui Sauvent</a>
 	<a href="numero-durgence" class="box">Numéros d'urgence</a>
 </div>
 
