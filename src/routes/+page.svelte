@@ -22,6 +22,7 @@
 	<a href="fiches?tag=blesse" class="box">Mon enfant s'est blessé</a>
 	<a href="fiches?tag=gestes" class="box">Les gestes Qui Sauvent</a>
 	<a href="numero-durgence" class="box">Numéros d'urgence</a>
+	<a href="vaccination" class="box">Vaccination</a>
 </div>
 
 <div class="divider div-transparent" />
