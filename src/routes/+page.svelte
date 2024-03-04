@@ -31,7 +31,7 @@
 	<div class="hero-text">
 		<h2>Centre Médical du Littoral</h2>
 		<p>600 Avenue Marcel Pagnol</p>
-		<p>3440 Pérols</p>
+		<p>C.P. 34470 Pérols</p>
 		<div>
 			<a href="tel:+33787290568">Tel: 0787290568</a>
 		</div>
